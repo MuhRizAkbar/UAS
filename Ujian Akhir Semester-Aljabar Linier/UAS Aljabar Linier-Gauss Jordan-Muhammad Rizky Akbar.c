@@ -36,6 +36,7 @@ void gauss_jordan(double A[N][N+1], double solusi[N]) {
             }
         }
     }
+
     printf("\nMatriks Hasil Akhir:\n");
     tampilkan_matriks(A);
 
@@ -70,8 +71,7 @@ int main() {
 
     printf("\nHasil Solusi:\n");
     for (int i = 0; i < N; i++) {
-        printf("X%d: %.3f\n", i+1, solusi[i]);
+        printf("%c: %.3f\n", 'X' + i, solusi[i]);
     }
-
     return 0;
 }
